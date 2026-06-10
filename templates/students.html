@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flask Full Stack Website - Students</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Registered Students List </h1>
+            <table>
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Course</th>
+                </tr>
+                {% for student in students %}
+                <tr>
+                    <td>{{ student[0] }}</td>
+                    <td>{{ student[1] }}</td>
+                    <td>{{ student[2] }}</td>
+                    <td>{{ student[3] }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+
+            <a href="/" class="btn">Home</a>
+        </div>
+    </body>
+</html>

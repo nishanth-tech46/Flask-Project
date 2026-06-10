@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Register Form</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+    </head>
+
+    <body>
+        <div class="container">
+            <h1>Welcome to Flask Full Stack Website</h1>
+            <form method="post">
+                <input type="text" id="name" name="name" required placeholder="Enter Your Name"><br>
+                <input type="email" id="email" name="email" required placeholder="Enter Your Email"><br>
+                <input type="course" id="course" name="course" required placeholder="Enter Your Course"><br>
+                <button type="submit" class="btn">Register</button><br>
+                
+            </form>
+            <a href="/" class="btn">Home</a>
+        </div>
+    </body>
+</html>
